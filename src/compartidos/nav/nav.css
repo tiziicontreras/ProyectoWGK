@@ -1,0 +1,187 @@
+/* =========================
+   NAVBAR WGK
+========================= */
+
+.navbar {
+  background: #000 !important;
+
+  height: 64px;
+
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+
+  padding: 0 40px !important;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  z-index: 9999;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.navbar-brand {
+  justify-self: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-brand img {
+  height: 24px;
+  width: auto;
+  display: block;
+}
+
+/* =========================
+   IZQUIERDA
+========================= */
+
+.navbar > .d-flex:first-child {
+  justify-self: start;
+}
+
+/* =========================
+   DERECHA
+========================= */
+
+.navbar > .d-flex:last-child {
+  justify-self: end;
+  gap: 18px !important;
+}
+
+/* =========================
+   HAMBURGUESA
+========================= */
+
+.navbar-toggler {
+  border: none !important;
+  background: transparent !important;
+  padding: 0;
+  box-shadow: none !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* =========================
+   ICONOS
+========================= */
+
+.navbar .bi {
+  color: white;
+  font-size: 1.15rem;
+  transition: .2s ease;
+}
+
+.navbar .bi:hover {
+  opacity: .7;
+}
+
+/* =========================
+   BADGE CARRITO
+========================= */
+
+.badge {
+  width: 16px;
+  height: 16px;
+
+  font-size: 10px !important;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50% !important;
+}
+
+/* =========================
+   LOGIN
+========================= */
+
+.btn-login {
+  background: #111 !important;
+  color: white !important;
+
+  border: 1px solid #222 !important;
+
+  border-radius: 8px;
+
+  padding: 7px 14px !important;
+
+  font-size: 0.8rem;
+  font-weight: 500;
+
+  transition: all .25s ease;
+}
+
+.btn-login:hover {
+  background: white !important;
+  color: black !important;
+  border-color: white !important;
+}
+
+/* =========================
+   MENU DESPLEGABLE
+========================= */
+
+.collapse {
+  background: #000 !important;
+
+  margin-top: 64px;
+
+  border: none;
+  box-shadow: none;
+}
+
+.collapse .p-3 {
+  padding: 20px 40px !important;
+}
+
+.collapse a {
+  color: white !important;
+
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  padding: 10px 0;
+
+  transition: .2s ease;
+}
+
+.collapse a:hover {
+  opacity: .7;
+}
+
+/* =========================
+   ESPACIO POR NAVBAR FIXED
+========================= */
+
+body {
+  padding-top: 64px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px !important;
+  }
+
+  .btn-login {
+    display: none;
+  }
+}

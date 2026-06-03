@@ -1,0 +1,135 @@
+/* ===== CARRITO ===== */
+
+body {
+  background: radial-gradient(circle at top, #1a1d25, #0d0f14);
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+
+  /* espacio por navbar fijo */
+  padding-top: 90px;
+}
+
+/* ===== TABLA CARRITO ===== */
+.table {
+  width: 90%;
+  margin: 40px auto;
+
+  border-radius: 20px;
+  overflow: hidden;
+
+  background: rgba(20, 20, 20, 0.55) !important;
+  backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  box-shadow:
+    0 10px 35px rgba(0,0,0,0.45),
+    0 0 20px rgba(0,212,255,0.08);
+}
+
+/* ===== HEADER ===== */
+.table thead {
+  background: linear-gradient(90deg, #111, #1d1d1d);
+}
+
+.table thead th {
+  padding: 18px !important;
+
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  border: none !important;
+}
+
+/* ===== FILAS ===== */
+.table tbody tr {
+  transition: 0.3s ease;
+}
+
+.table tbody tr:hover {
+  background: rgba(255,255,255,0.05);
+}
+
+/* ===== CELDAS ===== */
+.table tbody td,
+.table tbody th {
+  padding: 16px !important;
+
+  vertical-align: middle;
+
+  color: #e5e5e5;
+
+  border-color: rgba(255,255,255,0.05) !important;
+}
+
+/* ===== INDEX ===== */
+.table tbody th {
+  color: #00d4ff;
+  font-weight: bold;
+}
+
+/* ===== BOTÓN ELIMINAR ===== */
+.btn-danger {
+  width: 42px;
+  height: 42px;
+
+  border-radius: 12px !important;
+  border: none !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(135deg, #ff3c3c, #d60000) !important;
+
+  transition: 0.3s ease;
+}
+
+.btn-danger:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 18px rgba(255,0,0,0.35);
+}
+
+.btn-danger svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+
+  .table {
+    width: 95%;
+  }
+
+  .table thead {
+    display: none;
+  }
+
+  .table,
+  .table tbody,
+  .table tr,
+  .table td,
+  .table th {
+    display: block;
+    width: 100%;
+  }
+
+  .table tbody tr {
+    margin-bottom: 15px;
+    padding: 12px;
+
+    border-radius: 15px;
+    background: rgba(255,255,255,0.04);
+  }
+
+  .table tbody td,
+  .table tbody th {
+    text-align: center;
+    border: none !important;
+  }
+}
