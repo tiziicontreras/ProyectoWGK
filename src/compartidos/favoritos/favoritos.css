@@ -1,97 +1,106 @@
-/* ===== CARRITO ===== */
-
-body {
-  background: radial-gradient(circle at top, #1a1d25, #0d0f14);
-  font-family: 'Segoe UI', sans-serif;
-  color: white;
-
-  /* espacio por navbar fijo */
-  padding-top: 90px;
+/* Título */
+/* Título */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #040404;
+  margin: 40px 0;
 }
 
-/* ===== TABLA CARRITO ===== */
+/* Tabla */
 .table {
   width: 90%;
-  margin: 40px auto;
-
-  border-radius: 20px;
+  margin: auto;
+  background: #111;
+  border-radius: 15px;
   overflow: hidden;
-
-  background: rgba(20, 20, 20, 0.55) !important;
-  backdrop-filter: blur(14px);
-
-  border: 1px solid rgba(255,255,255,0.08);
-
-  box-shadow:
-    0 10px 35px rgba(0,0,0,0.45),
-    0 0 20px rgba(0,212,255,0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .4);
 }
 
-/* ===== HEADER ===== */
+/* Encabezados */
 .table thead {
-  background: linear-gradient(90deg, #111, #1d1d1d);
+  background: #000;
 }
 
 .table thead th {
-  padding: 18px !important;
-
-  color: white;
+  color: #fff;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-
-  font-size: 0.9rem;
-  font-weight: 600;
-
-  border: none !important;
+  border: none;
+  padding: 20px;
+  text-align: center;
 }
 
-/* ===== FILAS ===== */
+/* Filas */
 .table tbody tr {
-  transition: 0.3s ease;
+  transition: all .3s ease;
 }
 
 .table tbody tr:hover {
-  background: rgba(255,255,255,0.05);
+  background: #1d1d1d;
+  transform: scale(1.01);
 }
 
-/* ===== CELDAS ===== */
-.table tbody td,
-.table tbody th {
-  padding: 16px !important;
-
+.table td {
   vertical-align: middle;
-
-  color: #e5e5e5;
-
-  border-color: rgba(255,255,255,0.05) !important;
+  padding: 20px;
+  border-color: #222;
+  text-align: center;
 }
 
-/* ===== INDEX ===== */
-.table tbody th {
-  color: #00d4ff;
-  font-weight: bold;
+/* Imagen */
+.table img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
-/* ===== BOTÓN ELIMINAR ===== */
+/* Nombre del producto */
+.table td:nth-child(2) {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Precio */
+.table td:nth-child(3) {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* Botón carrito */
+.table td button:not(.btn-danger) {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 12px;
+  background: #fff;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.table td button:not(.btn-danger):hover {
+  transform: scale(1.1);
+  background: #eaeaea;
+}
+
+/* Botón eliminar */
 .btn-danger {
-  width: 42px;
-  height: 42px;
-
-  border-radius: 12px !important;
-  border: none !important;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background: linear-gradient(135deg, #ff3c3c, #d60000) !important;
-
-  transition: 0.3s ease;
+  background: transparent;
+  border: 1px solid #fff;
+  transition: .3s;
+  padding: 10px 12px;
 }
 
 .btn-danger:hover {
-  transform: scale(1.08);
-  box-shadow: 0 6px 18px rgba(255,0,0,0.35);
+  background: #000;
+  transform: scale(1.1);
 }
 
 .btn-danger svg {
@@ -99,37 +108,25 @@ body {
   height: 18px;
 }
 
-/* ===== RESPONSIVE ===== */
+/* Responsive */
 @media (max-width: 768px) {
-
   .table {
-    width: 95%;
-  }
-
-  .table thead {
-    display: none;
-  }
-
-  .table,
-  .table tbody,
-  .table tr,
-  .table td,
-  .table th {
-    display: block;
     width: 100%;
+    font-size: 0.85rem;
   }
 
-  .table tbody tr {
-    margin-bottom: 15px;
-    padding: 12px;
-
-    border-radius: 15px;
-    background: rgba(255,255,255,0.04);
+  .table img {
+    width: 60px;
+    height: 60px;
   }
 
-  .table tbody td,
-  .table tbody th {
-    text-align: center;
-    border: none !important;
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .table td button:not(.btn-danger) {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
   }
 }
