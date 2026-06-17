@@ -18,23 +18,23 @@ constructor(private CarritoService: carritoService, private FavoritoService: Fav
 Productos: Producto[] = [
     {
       id: 1,
-      nombre: "Nike Air Force 1 07",
+      nombre: "Nike Air Force 1 '07",
       disponibilidad: true,
       descripcion: "Zapatillas de Moda para Hombre",
       cantidad: 1,
-      precio: "$249.000",
-      precioOferta: "$200.000",
-      img: "assets/AirForce.webp"
+      precio: "$229.999",
+      precioOferta: "$160.999",
+      img: "assets/157486-800-800.webp"
     },
     {
       id: 2,
-      nombre: "Air Jordan 1 Low SE",
+      nombre: "Nike Pegasus Plus",
       disponibilidad: true,
-      descripcion: "Zapatillas Jordan para Hombre",
-      precio: "$279.999",
-      precioOferta: "",
+      descripcion: "Zapatillas de Running para Hombre",
+      precio: "$369.999",
+      precioOferta: "258.999",
       cantidad: 1,
-      img: "assets/Jordan1Low.webp"
+      img: "assets/1140855-800-800.webp"
     },
     {
       id: 3,
@@ -48,33 +48,33 @@ Productos: Producto[] = [
     },
     {
       id: 4,
-      nombre: "",
+      nombre: "Air Jordan 1 Low",
       disponibilidad: true,
-      descripcion: "",
-      precio: "",
-      precioOferta: "",
+      descripcion: "Zapatillas Jordan para Hombre",
+      precio: "$259.999",
+      precioOferta: "$194.999",
       cantidad: 1,
-      img: "assets/"
+      img: "assets/1504079-800-800.webp"
     },
     {
       id: 5,
-      nombre: "",
+      nombre: "Nike Elemental",
       disponibilidad: true,
-      descripcion: "",
-      precio: "",
-      precioOferta: "",
+      descripcion: "Mochila de Moda Unisex",
+      precio: "$99.999",
+      precioOferta: "$69.999",
       cantidad: 1,
-      img: ""
+      img: "assets/1292396-800-800.webp"
     },
     {
       id: 6,
-      nombre: "",
+      nombre: "Nike Air Max Dn",
       disponibilidad: true,
-      descripcion: "",
-      precio: "",
-      precioOferta: "",
+      descripcion: "Zapatillas de Moda para Hombre",
+      precio: "$369.999",
+      precioOferta: "$258.999",
       cantidad: 1,
-      img: ""
+      img: "assets/1363281-800-800.webp"
     }
 
     

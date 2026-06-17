@@ -49,32 +49,52 @@ export class Productos {
       img: "assets/1531060-800-800 (1).webp"
     },
     {
-      id: 4,
-      nombre: "",
+    id: 4,
+      nombre: "Air Jordan 1 Retro High OG",
       disponibilidad: true,
-      descripcion: "",
-      precio: "",
+      descripcion: "Zapatillas Jordan Unisex",
+      precio: "$499.999",
       cantidad: 1,
-      img: "assets/"
+      img: "assets/1824592-800-800.webp"
     },
     {
       id: 5,
-      nombre: "",
+      nombre: "Nike Dunk Low",
       disponibilidad: true,
-      descripcion: "",
-      precio: "",
+      descripcion: "Zapatillas de Moda para Mujer",
+      precio: "$249.999",
       cantidad: 1,
-      img: ""
+      img: "assets/1594071-800-800.webp"
     },
     {
       id: 6,
-      nombre: "",
+      nombre: "San Antonio Spurs 2025/26 Statement Edition",
       disponibilidad: true,
-      descripcion: "",
-      precio: "",
+      descripcion: "Musculosa Jordan para Hombre",
+      precio: "$199.999",
       cantidad: 1,
-      img: ""
+      img: "assets/1730550-800-800.webp"
+    },
+    {
+      id: 7,
+      nombre: "Nike Air Max 95",
+      disponibilidad: true,
+      descripcion: "Zapatillas de Moda para Mujer",
+      precio: "$379.999",
+      cantidad: 1,
+      img: "assets/1678688-800-800.webp"
+    },
+    {
+      id: 8,
+      nombre: "Nike Mind 001",
+      disponibilidad: true,
+      descripcion: "Sandalias tipo Mule para Mujer",
+      precio: "$199.999",
+      cantidad: 1,
+      img: "assets/1824310-800-800.webp"
     }
+    
+
 
     
     

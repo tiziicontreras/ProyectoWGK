@@ -1,26 +1,61 @@
-<section class="contact-container">
+<body>
+  <main>
 
-  <div class="contact-box">
+    <div class="login-container">
 
-    <h2 class="contact-title">Contacto</h2>
-    <p class="contact-subtitle">¿Tenés alguna consulta? Escribinos 👇</p>
+      <div class="login-box">
 
-    <form>
-      <div class="mb-3">
-        <input type="text" class="form-control" placeholder="Nombre">
+        <!-- LOGO -->
+        <img src="assets/wgk.avif" alt="logo" class="login-logo">
+
+        <h2>Contacto</h2>
+
+        <form>
+
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Nombre completo">
+          </div>
+
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Correo electrónico">
+          </div>
+
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Asunto">
+          </div>
+
+          <div class="mb-3">
+            <textarea
+              class="form-control"
+              rows="5"
+              placeholder="Escribí tu mensaje"></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-primary w-100">
+            Enviar mensaje
+          </button>
+
+        </form>
+
+        <p class="login-register-text">
+          ¿Querés volver al inicio?
+          <a routerLink="Inicio">Ir al inicio</a>
+        </p>
+
       </div>
 
-      <div class="mb-3">
-        <input type="email" class="form-control" placeholder="Correo electrónico">
-      </div>
+    </div>
 
-      <div class="mb-3">
-        <textarea class="form-control" rows="4" placeholder="Tu mensaje"></textarea>
-      </div>
-
-      <button type="submit" class="btn btn-primary w-100">Enviar mensaje</button>
-    </form>
-
-  </div>
-
-</section>
+  </main>
+</body>

@@ -106,3 +106,77 @@ h1 {
     font-size: 1.8rem;
   }
 }
+
+/* CONTENEDOR GENERAL */
+.carrito-container {
+  width: 95%;
+  margin: 40px auto;
+
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+/* TABLA */
+.carrito-tabla {
+  flex: 3;
+}
+
+/* BURBUJA RESUMEN */
+.resumen-compra {
+  flex: 1;
+
+  background: #111;
+  color: white;
+
+  padding: 25px;
+  border-radius: 20px;
+
+  position: sticky;
+  top: 20px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,.4);
+}
+
+.resumen-compra h3 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.resumen-item {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.resumen-item strong {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+/* BOTÓN FINALIZAR */
+.btn-finalizar {
+  width: 100%;
+
+  border: none;
+  border-radius: 12px;
+
+  padding: 14px;
+
+  background: white;
+  color: black;
+
+  font-weight: 700;
+  text-transform: uppercase;
+
+  transition: .3s;
+}
+
+.btn-finalizar:hover {
+  transform: translateY(-2px);
+  background: #e5e5e5;
+}
