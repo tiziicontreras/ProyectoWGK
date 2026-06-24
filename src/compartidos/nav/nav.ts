@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { carritoService } from '../../app/servicios/carritoService';
+
 @Component({
   selector: 'app-nav',
   imports: [RouterLink],
@@ -7,5 +9,6 @@ import { RouterLink } from '@angular/router';
   styleUrl: './nav.css',
 })
 export class Nav {
+constructor(public carritoService: carritoService) {}
 
 }

@@ -3,9 +3,10 @@ import { Producto } from '../../app/models/producto';
 import { carritoService } from '../../app/servicios/carritoService';
 import { FavoritoService } from '../../app/servicios/favoritoService';
 
+
 @Component({
   selector: 'app-productos',
-  imports: [Productos],
+  imports: [],
   templateUrl: './productos.html',
   styleUrl: './productos.css',
 })
@@ -26,7 +27,7 @@ export class Productos {
       disponibilidad: true,
       descripcion: "Zapatillas de Moda para Hombre",
       cantidad: 1,
-      precio: "$249.000",
+      precio: 249.000,
 
       img: "assets/AirForce.webp"
     },
@@ -35,7 +36,7 @@ export class Productos {
       nombre: "Air Jordan 1 Low SE",
       disponibilidad: true,
       descripcion: "Zapatillas Jordan para Hombre",
-      precio: "$279.999",
+      precio: 279999,
       cantidad: 1,
       img: "assets/Jordan1Low.webp"
     },
@@ -44,7 +45,7 @@ export class Productos {
       nombre: "Air Jordan 3 Retro",
       disponibilidad: true,
       descripcion: "Zapatillas Jordan para Hombre",
-      precio: "$314.999",
+      precio: 314999,
       cantidad: 1,
       img: "assets/1531060-800-800 (1).webp"
     },
@@ -53,7 +54,7 @@ export class Productos {
       nombre: "Air Jordan 1 Retro High OG",
       disponibilidad: true,
       descripcion: "Zapatillas Jordan Unisex",
-      precio: "$499.999",
+      precio: 499999,
       cantidad: 1,
       img: "assets/1824592-800-800.webp"
     },
@@ -62,7 +63,7 @@ export class Productos {
       nombre: "Nike Dunk Low",
       disponibilidad: true,
       descripcion: "Zapatillas de Moda para Mujer",
-      precio: "$249.999",
+      precio: 249.999,
       cantidad: 1,
       img: "assets/1594071-800-800.webp"
     },
@@ -71,7 +72,7 @@ export class Productos {
       nombre: "San Antonio Spurs 2025/26 Statement Edition",
       disponibilidad: true,
       descripcion: "Musculosa Jordan para Hombre",
-      precio: "$199.999",
+      precio: 199999,
       cantidad: 1,
       img: "assets/1730550-800-800.webp"
     },
@@ -80,7 +81,7 @@ export class Productos {
       nombre: "Nike Air Max 95",
       disponibilidad: true,
       descripcion: "Zapatillas de Moda para Mujer",
-      precio: "$379.999",
+      precio: 379999,
       cantidad: 1,
       img: "assets/1678688-800-800.webp"
     },
@@ -89,7 +90,7 @@ export class Productos {
       nombre: "Nike Mind 001",
       disponibilidad: true,
       descripcion: "Sandalias tipo Mule para Mujer",
-      precio: "$199.999",
+      precio: 199999,
       cantidad: 1,
       img: "assets/1824310-800-800.webp"
     }

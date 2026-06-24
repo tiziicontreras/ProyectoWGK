@@ -3,9 +3,10 @@ import { carritoService } from '../../app/servicios/carritoService';
 import { FavoritoService } from '../../app/servicios/favoritoService';
 import { Producto } from '../../app/models/producto';
 
+
 @Component({
   selector: 'app-ofertas',
-  imports: [Ofertas],
+  imports: [],
   templateUrl: './ofertas.html',
   styleUrl: './ofertas.css',
 })
@@ -22,8 +23,8 @@ Productos: Producto[] = [
       disponibilidad: true,
       descripcion: "Zapatillas de Moda para Hombre",
       cantidad: 1,
-      precio: "$229.999",
-      precioOferta: "$160.999",
+      precio: 299999,
+      precioOferta: 160999,
       img: "assets/157486-800-800.webp"
     },
     {
@@ -31,8 +32,8 @@ Productos: Producto[] = [
       nombre: "Nike Pegasus Plus",
       disponibilidad: true,
       descripcion: "Zapatillas de Running para Hombre",
-      precio: "$369.999",
-      precioOferta: "258.999",
+      precio: 369.999,
+      precioOferta: 258999,
       cantidad: 1,
       img: "assets/1140855-800-800.webp"
     },
@@ -41,8 +42,8 @@ Productos: Producto[] = [
       nombre: "Air Jordan 3 Retro",
       disponibilidad: true,
       descripcion: "Zapatillas Jordan para Hombre",
-      precio: "$314.999",
-      precioOferta: "",
+      precio: 314999,
+      precioOferta: 220999,
       cantidad: 1,
       img: "assets/1531060-800-800 (1).webp"
     },
@@ -51,8 +52,8 @@ Productos: Producto[] = [
       nombre: "Air Jordan 1 Low",
       disponibilidad: true,
       descripcion: "Zapatillas Jordan para Hombre",
-      precio: "$259.999",
-      precioOferta: "$194.999",
+      precio: 259999,
+      precioOferta: 194999,
       cantidad: 1,
       img: "assets/1504079-800-800.webp"
     },
@@ -61,8 +62,8 @@ Productos: Producto[] = [
       nombre: "Nike Elemental",
       disponibilidad: true,
       descripcion: "Mochila de Moda Unisex",
-      precio: "$99.999",
-      precioOferta: "$69.999",
+      precio: 99999,
+      precioOferta: 69999,
       cantidad: 1,
       img: "assets/1292396-800-800.webp"
     },
@@ -71,8 +72,8 @@ Productos: Producto[] = [
       nombre: "Nike Air Max Dn",
       disponibilidad: true,
       descripcion: "Zapatillas de Moda para Hombre",
-      precio: "$369.999",
-      precioOferta: "$258.999",
+      precio: 369999,
+      precioOferta: 258999,
       cantidad: 1,
       img: "assets/1363281-800-800.webp"
     }
@@ -81,12 +82,24 @@ Productos: Producto[] = [
     
   ]
 
-   agregarCarrito(p: Producto){
-    this.CarritoService.agregarProducto(p);
-  }
+agregarCarrito(p: Producto) {
+
+  const productoOferta: Producto = {
+    ...p,
+    precio: p.precioOferta ?? p.precio
+  };
+
+  this.CarritoService.agregarProducto(productoOferta);
+}
 
    agregarFavoritos(p: Producto){
-    this.FavoritoService.agregarProducto(p);
+
+     const productoOferta: Producto = {
+    ...p,
+    precio: p.precioOferta ?? p.precio
+  };
+
+    this.FavoritoService.agregarProducto(productoOferta);
   }
 
 }

@@ -43,4 +43,8 @@ export class Carrito implements OnInit {
     this.ProductoCarrito =
       this.CarritoService.obtenerProducto();
   }
+
+  get precioTotal(): number {
+  return this.CarritoService.obtenerPrecioTotal();
+  }
 }

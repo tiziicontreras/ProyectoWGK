@@ -1,182 +1,86 @@
-/* Título */
 h1 {
   text-align: center;
-  font-size: 2.5rem;
-  font-weight: 800;
-  letter-spacing: 3px;
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 30px 0 40px;
   text-transform: uppercase;
-  color: #040404;
-  margin: 40px 0;
+  letter-spacing: 2px;
 }
 
-/* Tabla */
 .table {
   width: 90%;
-  margin: auto;
-  background: #111;
-  border-radius: 15px;
+  margin: 0 auto;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, .4);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
 }
 
-/* Encabezados */
 .table thead {
-  background: #000;
+  background-color: #212529;
 }
 
-.table thead th {
-  color: #ffffff;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border: none;
-  padding: 20px;
-}
-
-/* Filas */
 .table tbody tr {
-  transition: all .3s ease;
-}
-
-.table tbody tr:hover {
-  background: #1d1d1d;
-  transform: scale(1.01);
-}
-
-.table td {
   vertical-align: middle;
-  padding: 20px;
-  border-color: #222;
 }
 
-/* Imagen */
 .table img {
   width: 90px;
   height: 90px;
-  object-fit: cover;
+  object-fit: contain;
+  background: white;
   border-radius: 12px;
- 
+  padding: 8px;
 }
 
-/* Cantidad */
-.btn-light {
-  width: 35px;
-  height: 35px;
-  border: none;
-  font-weight: bold;
-  transition: .3s;
+.table td,
+.table th {
+  padding: 25px 20px;
 }
 
-.btn-light:hover {
-  transform: scale(1.10);
-}
+.carrito-resumen {
+  width: 400px;
 
-/* Eliminar */
-.btn-danger {
-  background: transparent;
-  border: 1px solid #ffffff;
-  transition: .3s;
-}
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: 5%;
 
-.btn-danger:hover {
-  background: #000000;
-  transform: scale(1.1);
-}
-
-/* Precio */
-.table td:nth-child(4) {  
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 1.1rem;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .table {
-    width: 100%;
-    font-size: 0.85rem;
-  }
-
-  .table img {
-    width: 60px;
-    height: 60px;
-  }
-
-  h1 {
-    font-size: 1.8rem;
-  }
-}
-
-/* CONTENEDOR GENERAL */
-.carrito-container {
-  width: 95%;
-  margin: 40px auto;
-
-  display: flex;
-  gap: 30px;
-  align-items: flex-start;
-}
-
-/* TABLA */
-.carrito-tabla {
-  flex: 3;
-}
-
-/* BURBUJA RESUMEN */
-.resumen-compra {
-  flex: 1;
-
-  background: #111;
-  color: white;
-
-  padding: 25px;
+  background: #212529;
   border-radius: 20px;
+  padding: 25px 35px;
 
-  position: sticky;
-  top: 20px;
-
-  box-shadow: 0 10px 30px rgba(0,0,0,.4);
-}
-
-.resumen-compra h3 {
-  text-align: center;
-  margin-bottom: 25px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.resumen-item {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
-  font-size: 1.2rem;
-  margin-bottom: 25px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
 }
 
-.resumen-item strong {
-  color: #fff;
-  font-size: 1.4rem;
+.carrito-total {
+  margin: 0;
+  color: white;
+  font-size: 2rem;
+  font-weight: 800;
 }
 
-/* BOTÓN FINALIZAR */
-.btn-finalizar {
-  width: 100%;
+.carrito-btn-finalizar {
+  background: white !important;
+  color: black !important;
+  border: none !important;
 
-  border: none;
+  padding: 14px 35px;
   border-radius: 12px;
 
-  padding: 14px;
-
-  background: white;
-  color: black;
-
+  font-size: 1rem;
   font-weight: 700;
-  text-transform: uppercase;
 
-  transition: .3s;
+  transition: 0.25s ease;
 }
 
-.btn-finalizar:hover {
-  transform: translateY(-2px);
-  background: #e5e5e5;
+.carrito-btn-finalizar:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.15);
+}
+
+.btn-danger {
+  border-radius: 10px;
 }

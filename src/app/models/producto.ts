@@ -4,7 +4,7 @@ export interface Producto {
    disponibilidad: boolean
    descripcion: string
    cantidad: number
-   precio: string
-   precioOferta?: string
+   precio: number
+   precioOferta?: number
    img: string
 }

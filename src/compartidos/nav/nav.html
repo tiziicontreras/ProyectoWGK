@@ -27,7 +27,7 @@
         <a routerLink="Carrito" class="text-white position-relative text-decoration-none">
           <i class="bi bi-bag"></i>
           <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-light text-dark">
-            0
+           {{ carritoService.obtenerCantidadTotal() }}
           </span>
         </a>
 
