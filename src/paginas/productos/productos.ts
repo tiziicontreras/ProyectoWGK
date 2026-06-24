@@ -27,7 +27,7 @@ export class Productos {
       disponibilidad: true,
       descripcion: "Zapatillas de Moda para Hombre",
       cantidad: 1,
-      precio: 249.000,
+      precio: 249000,
 
       img: "assets/AirForce.webp"
     },
@@ -63,7 +63,7 @@ export class Productos {
       nombre: "Nike Dunk Low",
       disponibilidad: true,
       descripcion: "Zapatillas de Moda para Mujer",
-      precio: 249.999,
+      precio: 249999,
       cantidad: 1,
       img: "assets/1594071-800-800.webp"
     },
@@ -93,6 +93,15 @@ export class Productos {
       precio: 199999,
       cantidad: 1,
       img: "assets/1824310-800-800.webp"
+    },
+    {
+      id: 9,
+      nombre: "Nike Air Max Plus OG",
+      disponibilidad: true,
+      descripcion: "Zapatillas de Moda para Hombre",
+      precio: 399999,
+      cantidad: 1,
+      img: "assets/1732344-800-800.webp"
     }
     
 
