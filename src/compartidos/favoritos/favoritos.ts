@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FavoritoService } from '../../app/servicios/favoritoService';
-import { carritoService } from '../../app/servicios/carritoService';
+import { CarritoService } from '../../app/servicios/carrito.service';
 import { Producto } from '../../app/models/producto';
 
 @Component({
@@ -14,7 +14,7 @@ export class Favoritos implements OnInit {
 
   constructor(
     private FavoritoService: FavoritoService,
-     private CarritoService: carritoService
+     private carritoService: CarritoService
   ) { }
 
 
@@ -41,7 +41,7 @@ export class Favoritos implements OnInit {
   }
 
    agregarCarrito(p: Producto){
-    this.CarritoService.agregarProducto(p);
+    this.carritoService.agregarProducto(p);
   }
 
    agregarFavoritos(p: Producto){

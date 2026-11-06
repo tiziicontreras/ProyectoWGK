@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { carritoService } from '../../app/servicios/carritoService';
+import { CarritoService } from '../../app/servicios/carrito.service';
 import { Producto } from '../../app/models/producto';
 
 
@@ -18,33 +18,33 @@ export class Carrito implements OnInit {
   ProductoCarrito: Producto[] = [];
 
   constructor(
-    private CarritoService: carritoService
+    private carritoService: CarritoService
   ) { }
 
 
   ngOnInit() {
     this.ProductoCarrito =
-      this.CarritoService.obtenerProducto();
+      this.carritoService.obtenerProducto();
   }
 
 
   aumentar(id: number) {
-    this.CarritoService.aumentarCantidad(id);
+    this.carritoService.aumentarCantidad(id);
   }
 
 
   disminuir(id: number) {
-    this.CarritoService.disminuirCantidad(id);
+    this.carritoService.disminuirCantidad(id);
   }
 
     
   eliminar(id: number) {
-    this.CarritoService.eliminarProducto(id);
+    this.carritoService.eliminarProducto(id);
     this.ProductoCarrito =
-      this.CarritoService.obtenerProducto();
+      this.carritoService.obtenerProducto();
   }
 
   get precioTotal(): number {
-  return this.CarritoService.obtenerPrecioTotal();
+  return this.carritoService.obtenerPrecioTotal();
   }
 }

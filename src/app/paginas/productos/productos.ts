@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { Producto } from '../../app/models/producto';
-import { carritoService } from '../../app/servicios/carritoService';
-import { FavoritoService } from '../../app/servicios/favoritoService';
+import { CarritoService } from '../../servicios/carrito.service';
+import { FavoritoService } from '../../servicios/favoritoService';
+import { Producto } from '../../models/producto';
 
 
 @Component({
@@ -12,7 +12,7 @@ import { FavoritoService } from '../../app/servicios/favoritoService';
 })
 export class Productos {
 
-  constructor(private CarritoService: carritoService, private FavoritoService: FavoritoService){
+  constructor(private CarritoService: CarritoService, private FavoritoService: FavoritoService){
 
   }
   
